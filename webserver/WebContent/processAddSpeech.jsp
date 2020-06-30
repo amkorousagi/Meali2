@@ -1,7 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="dao.computervision"%>
+<%@ page import="dao.stt"%>
 <%@ page import="dao.Natural_Language"%>
 <%@ page import="dao.Pair"%>
+<%@ page import="java.net.URL"%> 
 <%@ page import="java.io.File"%> 
 <%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%> 
 <%@ page import="com.oreilly.servlet.MultipartRequest"%>
@@ -15,9 +16,8 @@
 	int maxSize = 5*1024*1024;
 	MultipartRequest multi = new MultipartRequest(request, saveFolder, maxSize, encoding, new DefaultFileRenamePolicy()); 
 	File f = multi.getFile("filename");
-	
-	computervision cv = new computervision();
-	String text =  cv.imagetotext(new FileInputStream(f));
+	stt s = new stt();
+	String text =  s.speechtotext(new FileInputStream(f));
 	Natural_Language nl = new Natural_Language();
 	List<Pair> list = nl.analyzeEntitiesText(text);
 %>
@@ -36,7 +36,7 @@
     </style>
   </head>
   <body>
-  	<jsp:include page="sub_header.jsp"/>
+    <jsp:include page="sub_header.jsp"/>
   	<jsp:include page="nav.jsp"/>
     <div id='sigma-container'></div>
     <script>

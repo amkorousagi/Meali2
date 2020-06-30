@@ -25,13 +25,11 @@ public class stt {
       // The path to the audio file to transcribe
 
       // Reads the audio file into memory
-      byte[] data = new byte[input.available()];
-      ByteString audioBytes = ByteString.copyFrom(data);
-
+      ByteString audioBytes = ByteString.readFrom(input);
       // Builds the sync recognize request
       RecognitionConfig config =
           RecognitionConfig.newBuilder()
-              .setEncoding(AudioEncoding.LINEAR16)
+              .setEncoding(AudioEncoding.FLAC)
               .setSampleRateHertz(16000)
               .setLanguageCode("ko-KR")
               .build();

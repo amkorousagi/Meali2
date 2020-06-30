@@ -11,7 +11,7 @@
 	<jsp:include page="main_header.jsp"/>
 	<jsp:include page="nav.jsp"/>
 	<section class="container">
-    	<a href="record.jsp">음성인식</a>
+    	<a href="audio.jsp">음성인식</a>
     	<a href="image.jsp">이미지인식</a>
 	</section>
 	<jsp:include page="footer.jsp"/>

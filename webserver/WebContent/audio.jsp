@@ -11,7 +11,7 @@
   <jsp:include page="sub_header.jsp"/>
   <jsp:include page="nav.jsp"/>
   <section class="container">
-  	<form name="newImage" action="processAddImage.jsp" method="POST" enctype="multipart/form-data">
+  	<form name="newImage" action="processAddSpeech.jsp" method="POST" enctype="multipart/form-data">
   		<input class="inputBox" type="file" name="filename" id="filename">
   		<input id="sendbtn" type="submit" value="보내기"/>
   	</form>
