@@ -1,0 +1,41 @@
+section a{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background-color:white;
+	font-size:1.5em;
+	font-weight:bold;
+	margin:16px auto 0px auto;
+	padding:16px 0;
+	width:90%;
+	border-style:solid;
+	border-width:2.5px;
+	border-color:#BDBDBD;
+	border-radius:31px;
+}
+
+section a:hover {
+	color:yellow;
+	background-color:#F2F2F2;
+}
+
+section button{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background-color:white;
+	font-size:1.5em;
+	font-weight:bold;
+	margin:16px auto 0px auto;
+	padding:16px 0;
+	width:90%;
+	border-style:solid;
+	border-width:2.5px;
+	border-color:#BDBDBD;
+	border-radius:31px;
+}
+
+section button:hover{
+	color:yellow;
+	background-color:#F2F2F2;
+}

@@ -1,0 +1,134 @@
+* {
+  color:#595959;
+  font-family: sans-serif;
+  font-size:1em
+}
+
+.container {
+  padding:8px
+}
+
+header {
+  color:white;
+  background-color:#2E64FE
+}
+
+header p {
+  margin:0px 0px 16px 0px;
+  text-align:center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#sidenavbtn_container {
+  margin:0px 0px 0px 8px;
+  text-align:left
+}
+
+#sidenavbtn {
+  font-size:32px;
+  cursor:pointer;
+  color:white
+}
+
+#mainServiceName {
+  font-family:sans-serif;
+  font-size:48px;
+  color:white
+}
+
+#subServiceName {
+  font-family:sans-serif;
+  font-size:32px;
+  color:white
+}
+
+#subheader_container p {
+  margin:0px
+}
+
+#subheader_container #sidenavbtn {
+  position:absolute;
+  top:5.334px;
+  left:16px
+}
+/********************************/
+/********************************/
+/********** End Header **********/
+
+/********** Navigation **********/
+/********************************/
+/********************************/
+.sidenav {
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:3;
+  top:0;
+  left:0;
+  background-color: white;
+  overflow-x:hidden;
+  transition:0.5s;
+}
+
+.sidenav a {
+  text-decoration:none
+}
+
+.sidenav .container {
+  margin:70px 0px 0px 14px;
+}
+
+.sidenav .container a {
+  margin:14px 0px 14px 0px;
+  font-size:24px;
+  display:block;
+  transition:0.3s;
+  text-align:left;
+  white-space:nowrap;
+}
+
+.sidenav a:hover {
+  color:white;
+}
+
+.sidenav .closebtn {
+  position:absolute;
+  top:8px;
+  right:16px;
+  font-size:48px;
+  padding:0;
+}
+
+footer {
+  margin-top:16px;
+  text-align:center;
+  font-size:12px
+}
+
+.inputBox {
+  margin:0px auto 0px auto;
+  text-align:left;
+  padding:2px 6px;
+  background-color:white;
+  border-color:#595959;
+  border-style:solid;
+  border-width:1.5px;
+  border-radius:3px
+}
+
+.inputBox::placeholder {
+  color:lightgray
+}
+
+.inputBox:focus {
+  background-color:lightcyan;
+  border-color:black;
+  color:black
+}
+
+#sendbtn {
+  float:right
+}
